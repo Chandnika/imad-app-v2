@@ -13,11 +13,11 @@ app.get('/article-one',function(req,res)
 {
 res.send('Okay, So what? ');
 });
-app.get('/article-one',function(req,res)
+app.get('/article-two',function(req,res)
 {
 res.send('Apdiyaaaaaaaaaaaaaaaa ');
 });
-app.get('/article-one',function(req,res)
+app.get('/article-three',function(req,res)
 {
 res.send('Ahaan ');
 });
