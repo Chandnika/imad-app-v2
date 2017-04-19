@@ -4,8 +4,8 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-//obj for a1-- has the values
-var a1={
+var articles={
+    a1:{
     title:'a1',
     heading:'a11',
     date:'April 19,2017|||CS Lab',
@@ -17,6 +17,32 @@ var a1={
     
   
 };
+    a2:{
+    title:'a2',
+    heading:'a22',
+    date:'April 19,2017|||CS Lab',
+    content:`<p> Okay</p>
+    <p> Okay</p>
+    <p> Okay</p>
+    <p> Okayddddddddddddddddddddddddddd</p> `
+    
+    
+  
+};a3:{
+    title:'a1',
+    heading:'a11',
+    date:'April 19,2017|||CS Lab',
+    content:`<p> Okay</p>
+    <p> Okay</p>
+    <p> Okay</p>
+    <p> Okaywwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww</p> `
+    
+    
+  
+};
+}
+//obj for a1-- has the values
+
 function f(data)
 {
     var title=data.title;
@@ -48,9 +74,10 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/article-one',function(req,res)
+app.get(':/ne',function(req,res)
 {
-res.send(f(a1));
+    var npe=req.params.ne
+res.send(f(articles[npe]));
 });
 app.get('/article-two',function(req,res)
 {
