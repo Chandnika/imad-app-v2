@@ -8,7 +8,7 @@ app.use(morgan('combined'));
 var a1={
     title:'a1',
     heading:'a11',
-    date:'April19,2017|||CS Lab',
+    date:'April 19,2017|||CS Lab',
     content:`<p> Okay</p>
     <p> Okay</p>
     <p> Okay</p>
@@ -35,7 +35,7 @@ ${title}
 </head>
 <body>
 <h1> ${heading} </h1>
-<div class="ab"> <p>  ${date} </p></div>
+<div class="main"> <p>  ${date} </p></div>
 
 <p> ${content} </p>
 </body>
