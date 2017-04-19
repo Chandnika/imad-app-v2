@@ -75,9 +75,9 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get(':/ne',function(req,res)
+app.get('/:ne',function(req,res)
 {
-    var npe=req.params.ne;
+    var npe=req.params.ne
 res.send(f(articles[npe]));
 });
 app.get('/article-two',function(req,res)
