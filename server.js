@@ -30,7 +30,7 @@ var ht=
 
 <title>
 ${title}
-<link href="/ui/style.css" rel="stylesheet"> 
+<link href="/ui/style.css" rel="stylesheet"/> 
 </title>
 </head>
 <body>
