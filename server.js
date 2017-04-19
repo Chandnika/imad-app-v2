@@ -35,7 +35,7 @@ ${title}
 </head>
 <body>
 <h1> ${heading} </h1>
-<div class="h"> <p>  ${date} </p></div>
+<div id="h"> <p>  ${date} </p></div>
 
 <p> ${content} </p>
 </body>
