@@ -30,13 +30,14 @@ var ht=
 
 <title>
 ${title}
+<link href="/ui/style.css" rel="stylesheet"> 
 </title>
 </head>
 <body>
 <h1> ${heading} </h1>
-<div> <p>  ${date} </p></div>
+<div class="h"> <p>  ${date} </p></div>
 
-<p> {content} </p>
+<p> ${content} </p>
 </body>
 </html>`
 ;
