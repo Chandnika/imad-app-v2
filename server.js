@@ -52,7 +52,7 @@ function f(data)
     var content=data.content;
 
 var ht=
-`<html>
+/*`<html>
 <head>
 
 <title>
@@ -68,6 +68,31 @@ ${title}
 <p> ${content} </p>
 </div>
 </body>
+</html>`*/
+`<html>
+    <head>
+        <title>
+            ${title}
+        </title>
+        <meta name="viewport" content="width=device-width , initial-scale=1"/>
+        <link href="/ui/style.css" rel="stylesheet" />
+        
+    </head>
+    <body>
+        <div class="container">
+        <div>
+            <a href="/">Take me Home!</a>
+            </div>
+            <hr/>
+            <h3>
+                THIRD
+            </h3>
+            <div>
+            ${date}
+                ${content}
+            </div>
+       </div> 
+    </body>
 </html>`
 ;
 return ht;
