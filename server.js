@@ -80,9 +80,9 @@ app.get('/:ne',function(req,res)
     var npe=req.params.ne
 res.send(f(articles[npe]));
 });
-app.get('/article-two',function(req,res)
+app.get('/article-one',function(req,res)
 {
-res.send('Apdiyaaaaaaaaaaaaaaaa ');
+res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
 app.get('/article-three',function(req,res)
 {
