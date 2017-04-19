@@ -57,14 +57,16 @@ var ht=
 
 <title>
 ${title}
-<link href="/ui/style.css" rel="stylesheet"/> 
+<link href="/ui/style.css" rel="stylesheet" /> 
 </title>
 </head>
 <body>
+<div class="container">
 <h1> ${heading} </h1>
-<div class="main"> <p>  ${date} </p></div>
+<div > <p>  ${date} </p></div>
 
 <p> ${content} </p>
+</div>
 </body>
 </html>`
 ;
@@ -75,12 +77,12 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-/*app.get('/:ne',function(req,res)
+app.get('/:ne',function(req,res)
 {
     var npe=req.params.ne
 res.send(f(articles[npe]));
-});*/
-app.get('/article-one',function(req,res)
+});
+/*app.get('/article-one',function(req,res)
 {
 res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
@@ -88,6 +90,7 @@ app.get('/article-three',function(req,res)
 {
 res.send('Ahaan ');
 });
+*/
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
