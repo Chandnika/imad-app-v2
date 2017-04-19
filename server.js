@@ -16,7 +16,7 @@ var articles={
     
     
   
-};
+},
     a2:{
     title:'a2',
     heading:'a22',
@@ -28,7 +28,8 @@ var articles={
     
     
   
-};a3:{
+},
+a3:{
     title:'a1',
     heading:'a11',
     date:'April 19,2017|||CS Lab',
@@ -39,8 +40,8 @@ var articles={
     
     
   
-};
 }
+};
 //obj for a1-- has the values
 
 function f(data)
